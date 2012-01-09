@@ -1,0 +1,48 @@
+
+.plusstream_header
+{
+}
+
+ul.plusstreams
+{
+}
+
+ul.plusstreams li
+{
+	padding-top:10px;
+	border-bottom:1px solid #ccc;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+	position:relative;	
+	width:inherit;
+}
+
+ul.plusstreams li:hover
+{
+	background:hsl(0, 0%, 95%);	
+}
+
+ul.plusstreams li img
+{
+	float:left;
+}
+
+ul.plusstreams li p
+{
+	margin-left:10px;
+	font-size:14px;
+	float:right;
+	width:330px;
+	line-height:16px;
+}
+
+ul.plusstreams li a {
+	color: #36C;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+ul.plusstreams li span.proflinkPrefix {
+	color: #999;
+}

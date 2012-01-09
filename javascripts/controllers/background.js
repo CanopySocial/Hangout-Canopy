@@ -2,7 +2,7 @@
 	/*
 		* Hangout Canopy V2
 		* http://hangoutcanopy.com
-		*  Developers : Robert Pit, Mohammed Eshbeata
+		* Developers : Robert Pit, Mohammed Eshbeata
 	*/
 
 	BackgroundController = window.BackgroundController = function()
@@ -11,9 +11,9 @@
 		this.connection	= new window.Connection();
 		this.storage	= new window.Storage();
 		this.manager	= new window.HangoutManager();
-		this.twitter	= new window.TwitterFeed();
 		this.settings	= new window.Settings();
 		this.profiles	= new window.Profiles();
+		this.plusapi	= new window.GooglePlusAPI('AIzaSyD9OVT14rdxn1OD2OITu_ygzQ_plai7JUk');
 
 		/*
 			* Color ENUM

@@ -124,23 +124,27 @@ templates.streams.row = '<article id="${htmlid}" class="stream">';
 templates.streams.row += '</article>';
 
 /*
-	* Twitter Feed
+	* Plus Stream Feed
 */
-templates.twitter ='<div class="section_header twitter_header">';
-templates.twitter += '<a class="follow" href="http://www.twitter.com/HangoutCanopy"><img src="http://twitter-badges.s3.amazonaws.com/follow_us-a.png" alt="Follow HangoutCanopy on Twitter"/></a>';
-templates.twitter += '</div>';
-templates.twitter += '<div class="twitter_feed section_content">';
-	templates.twitter += '<ul class="tweets">';
-		templates.twitter += '{{each(index, tweet) tweets}}';
-			templates.twitter += '<li id="tweet_${tweet.id}">';
-				templates.twitter +='<img src="${tweet.user.profile_image_url}" />';
-				templates.twitter +='<p>${tweet.text}</p>';
-				templates.twitter +='<span><a href="http://twitter.com/#!/Hangoutcanopy/status/${tweet.id_str}">View Tweet<a/></span>';
-				templates.twitter +='<br class="clear" />';
-			templates.twitter += '</li>';
-		templates.twitter += '{{/each}}';
-	templates.twitter += '<ul>';
-templates.twitter += '</div>';
+templates.plusstream ='<div class="section_header plusstream_header">';
+	//Header Here
+templates.plusstream += '</div>';
+templates.plusstream += '<div class="plusstream_feed section_content">';
+	templates.plusstream += '<ul class="plusstreams">';
+		templates.plusstream += '{{each(index, item) items}}';
+			templates.plusstream += '<li id="stream_${item.id}">';
+				templates.plusstream += '<img src="${item.actor.image.url}" />';
+				templates.plusstream +='<p>{{html item.object.content}}';
+					//Loop Attachments
+					templates.plusstream += '{{each(index, attachment) item.object.attachments}}';
+						templates.plusstream += "Has Attachment<br />";
+					templates.plusstream += '{{/each}}';
+				templates.plusstream += '</p>';
+				templates.plusstream +='<br class="clear" />';
+			templates.plusstream += '</li>';
+		templates.plusstream += '{{/each}}';
+	templates.plusstream += '<ul>';
+templates.plusstream += '</div>';
 
 
 

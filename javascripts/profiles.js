@@ -4,9 +4,17 @@
 		/*
 		 * Cache, Ajax, Storage
 		 * */
-		this.Ajax		= new window.Ajax();
+		this.Ajax	= new window.Ajax();
 		this.Storage	= new window.Storage();
-		this.Cache 		= this.Storage.get('profiles', {});
+		this.Cache 	= this.Storage.get('profiles', {});
+	}
+
+	Profiles.prototype.posts = function(userid)
+	{
+		if(userid in this.Cache)
+		{
+			return callback(null, this.Cache[userid]);
+		}
 	}
 	
 	Profiles.prototype.get = function(userid, callback)

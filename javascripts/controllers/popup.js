@@ -14,7 +14,7 @@
 		this.initializeHangouts();
 		this.initializeStreams();
 		this.initializeWatching();
-		this.initializeTweets();
+		this.initializePlusStream();
 		this.initializeClickMonitoring();
 		this.initializeLucky();
 	}
@@ -40,13 +40,11 @@
 
 	PopupController.prototype.compileTemplates = function()
 	{
-		$.template("hangouts.row"		, templates.hangouts.row);
+		$.template("hangouts.row"	, templates.hangouts.row);
 		$.template("hangouts.single"	, templates.hangouts.single);
-
-		$.template("streams.row"		, templates.streams.row);
-
-		$.template("twitter"			, templates.twitter);
-		$.template('watching'			, templates.watching);
+		$.template("streams.row"	, templates.streams.row);
+		$.template("plusstream"		, templates.plusstream);
+		$.template('watching'		, templates.watching);
 	}
 
 	PopupController.prototype.initializeStreams = function()
@@ -78,7 +76,6 @@
 			streams[i].htmlid = streams[i].id.replace(/[^a-zA-Z0-9]+/g,''); //Should be base64
 
 			var exists = $('#' + streams[i].htmlid, streamDOM).length > 0;
-			console.log(exists, streams[i].htmlid);
 			try
 			{
 				/*
@@ -201,7 +198,7 @@
 		
 		for(var id in watching.getWatched())
 		{
-			this.background.profiles.get(id, function(e, data){
+			this.background.plusapi.getPerson(id, {}, function(e, data){
 				if(e) return;
 
 				data.image.url = data.image.url.replace('?sz=50', '');
@@ -212,6 +209,8 @@
 				
 				html.slideDown();
 			});
+
+			//this.background.profiles.get(id, );
 		}
 		
 		//Bind the remove handler
@@ -269,7 +268,7 @@
 			/*
 			 * Ok let's try and get the profile information
 			 * */
-			this.background.profiles.get(segments[3], function(err, data){
+			this.background.plusapi.getPerson(segments[3], {}, function(err, data){
 				if(err)
 				{
 					//Show error
@@ -328,22 +327,20 @@
 	
 	}
 	
-	PopupController.prototype.initializeTweets = function()
+	PopupController.prototype.initializePlusStream = function()
 	{
-		/*
-			* Get the latest tweets
-		*/
-		var tweets = this.background.twitter.getTweets();
+		//Fetch Canopy Data
+		this.background.plusapi.listActivities("115063434129506153403", {}, function(err, stream){
+			if(err)
+			{
+				//show error
+				return false;
+			}
 
-		/*
-			* Generate the template area
-		*/
-		var html = $.tmpl("twitter", {tweets: tweets});
+			$("#tab_plusstream").html($.tmpl("plusstream", stream));
+		});
 
-		/*
-			* Add it to the DOM
-		*/
-		$('#tab_twitter').html(html);
+		//$('#tab_twitter').html("");
 	}
 
 	PopupController.prototype.updateHangout = function()
