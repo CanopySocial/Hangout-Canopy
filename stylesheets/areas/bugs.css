@@ -1,0 +1,68 @@
+form#bugs_contact
+{
+	margin-left: 20px;
+}
+form#bugs_contact input[type="text"],
+form#bugs_contact input[type="url"],
+form#bugs_contact input[type="email"],
+form#bugs_contactinput[type="tel"],
+textarea {
+	margin: 3px 0 0 0;
+	padding: 6px; 
+	width: 260px; 
+	font-family: arial, sans-serif; 
+	font-size: 12px; 
+	border: 1px solid #ccc;
+	background: -webkit-gradient(linear, left top, left 15, from(#FFFFFF), color-stop(4%, #f4f4f4), to(#FFFFFF));
+	background: -moz-linear-gradient(top, #FFFFFF, #f4f4f4 1px, #FFFFFF 15px);
+}
+
+form#bugs_contact textarea {
+	width: 275px; 
+	height: 150px;
+}
+
+form#bugs_contact label {
+	display: block;
+	font-size: 13px;
+	color: #666;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+form#bugs_contact label.error { 
+	width: 270px;
+	margin: 3px 0 0 0;
+	display: block;
+	color: #cf0101;                              
+	font-size: 11px; 
+	text-align: right;
+}
+
+form#bugs_contact .placeholder {
+	color: #aaa;
+}
+
+form#bugs_contact .button {
+	display: inline-block;
+	margin: 15px 0 0 90px;
+	padding: 5px 15px 5px 15px;
+	background-color: #ff9e00;
+	border: none;
+	color: #fff;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+}
+
+form#bugs_contact .button:hover {
+	background-color: #fc8500;
+	cursor: pointer;
+}
+
+form#bugs_contact .button:active {
+	margin-top: 16px;
+	background-color: #f08004;
+	cursor: pointer;
+}
+

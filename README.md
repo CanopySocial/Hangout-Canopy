@@ -1,0 +1,1 @@
+![HangoutcanopyPromo](https://lh3.googleusercontent.com/-2EuYy8dbg-g/Ts1rIS6X5EI/AAAAAAAAAF8/ZfH_yjwLR1A/s440/hangout_canopy_small_tile.png)

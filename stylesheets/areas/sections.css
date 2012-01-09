@@ -1,0 +1,27 @@
+section
+{
+	float:right;
+	height:inherit;
+	width: 430px;
+	background:#fafafa;
+	-webkit-box-shadow: -6px 20px 15px 0px rgba(0,0,0,0.65) /*-2px 0 15px 1px rgba(0,0,0,0.45);*/
+}
+
+section > .section_header
+{
+	background: #F1F1F1;
+	border-bottom: 1px solid #D2D2D2;
+	border-top: 1px solid #D2D2D2;
+	clear: both;
+	height: 60px;
+	width:430px;
+	position: fixed;
+}
+
+section > .section_content
+{
+	margin-top: 60px;
+	padding-top:2px;
+	overflow: auto;
+	max-height:520px;
+}

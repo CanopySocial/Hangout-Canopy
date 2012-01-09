@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/popup.css" media="screen" />
+		<script type="text/javascript" src="/javascripts/libraries/jquery.js"></script>
+		<script type="text/javascript" src="/javascripts/libraries/jquery.tmpl.js"></script>
+		<script type="text/javascript" src="/javascripts/libraries/jquery.autocomplete.js"></script>
+		<script type="text/javascript" src="/javascripts/libraries/googleplusapi.compressed.js"></script>
+		<script type="text/javascript" src="/javascripts/popup_tabs.js"></script>
+		<script type="text/javascript" src="/javascripts/templates.js"></script>
+		<script type="text/javascript" src="/javascripts/controllers/popup.js"></script>
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-27220948-1']);
+			_gaq.push(['_trackPageview', '/popup']); //For Real-Time statistics mainly.
+			_gaq.push(['_trackEvent',  "popup", 'clicked']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = 'https://ssl.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		<script type="text/javascript">
+			window.__PC = new window.PopupController();
+			$(document).ready(window.__PC.init.bind(window.__PC));
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<aside>
+				<ul id="menu">
+					<li id="stream" class="selected" ><a href="#"><span></span>Hangouts</a></li>
+					<li id="live"><a href="#"><span></span>Broadcasts</a></li>
+					<li id="watching"><a href="#"><span></span>Watching</a></li>
+					<li id="team"><a href="#"><span></span>Team</a></li>
+					<li id="twitter"><a href="#"><span></span>Twitter</a></li>
+					<li id="donate"><a href="#"><span></span>Donate</a></li>	
+				</ul>
+				<div class="logo"> <a  title="+Hangout Canopy" href="https://plus.google.com/u/0/115063434129506153403/posts"><img src="/images/icons/logo_32.png" /></a> </div>
+				<div class="ads">
+				<center><a id="lucky" href="#" class="button" >I'm Feeling Lucky</a></center>
+				</div>
+				<div class="settings">
+                	<a title="Start New Hangout" href="https://plus.google.com/hangouts/" class="new_hangout"><span><span></span>Start New Hangout</span></a>
+				</div>
+			</aside>
+			<section class="tab_area stylish-scrollbar" id="tab_stream"><div id="hangouts"></div></section>
+			<section class="tab_area stylish-scrollbar" id="tab_live"><div id="streams"></div></section>
+			<section class="tab_area" id="tab_watching">
+				<div class="section_header">
+                	<form id="watch_form"  >
+                		<input type="text" id="watch_url_input"  value="Paste User Profile Link Here"  onfocus="if (this.value == 'Paste User Profile Link Here') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Paste User Profile Link Here';}" />
+                    	<input type="submit" class="join button watch" value="Watch" />
+                    </form>
+                    <span id="watch_error" style="display:none;"></span>
+                </div>
+				<div class="clear"></div>
+				<div class="section_content">
+   					<ul id="watch_list">
+                    </ul>
+				</div>
+			</section>
+			<section class="tab_area" id="tab_team">
+				<div class="section_header">
+					<h2>The Team</h2>
+				</div>
+				<div class="section_content">
+					<div class="team-member">
+						<div class="team-member-image">
+							<a href="https://plus.google.com/110106586947414476573/" title="Google+ Profile">
+								<img src="https://lh5.googleusercontent.com/-KUmMRGsvGOE/AAAAAAAAAAI/AAAAAAAAAfw/q85dF3kNJPA/photo.jpg?sz=64">
+							</a>
+						</div>
+						<div class="team-member-info">
+							<a href="https://plus.google.com/110106586947414476573/" title="Google+ Profile">
+								<h3>Robert Pitt</h3>
+							</a>
+							<p>Robert Pitt is the developer and visionary behind the extension. He wrote most of the code single-handedly, and also worked on the server back-end. Robert also helped with the design and user-friendliness of the end product.</p>
+							<p class="links">
+								<a href="https://plus.google.com/110106586947414476573/" title="Google+ Profile">Google Profile</a>
+								<span>&nbsp;&nbsp;</span>
+								<a href="http://adminspot.net" title="Adminspot (Webmaster Forum)">Adminspot (Webmaster Forum)</a>
+							</p>
+						</div>
+					</div>
+					<div class="team-member">
+						<div class="team-member-image">
+							<a href="https://plus.google.com/105574566053602019710/" title="Google+ Profile">
+								<img src="https://lh5.googleusercontent.com/-LipdKUR3SWE/AAAAAAAAAAI/AAAAAAAAAYU/WY3zs85GvhA/photo.jpg?sz=64">
+							</a>
+						</div>
+						<div class="team-member-info">
+							<a href="https://plus.google.com/105574566053602019710/" title="Google+ Profile">
+								<h3>Brian Aldridge</h3>
+							</a>
+							<p>Brian Aldridge is responsible for server maintenance and monitoring of traffic. He also contributes great ideas for upcoming features and UI improvements.</p>
+							<p class="links">
+								<a href="https://plus.google.com/105574566053602019710/" title="Google+ Profile">Google Profile</a>
+								<span>&nbsp; &nbsp;</span>
+								<a href="http://www.biteoftech.com/" title="Bite of Tech (Podcast)">Bite of Tech (Podcast)</a>
+							</p>
+						</div>
+					</div>
+					<div class="team-member">
+						<div class="team-member-image">
+							<a href="https://plus.google.com/103618862132298404107/about" title="Google+ Profile">
+								<img src="https://lh6.googleusercontent.com/-EzHCxQDdK_o/AAAAAAAAAAI/AAAAAAAAAXU/IS9tvZ0tVz4/photo.jpg?sz=64">
+							</a>
+						</div>
+						<div class="team-member-info">
+							<a href="https://plus.google.com/103618862132298404107/about" title="Google+ Profile">
+								<h3>Mohammad Eshbeata</h3>
+							</a>
+							<p>Mohammed Eshbeata, Also known as The Coder Is an avid web-developer and software engineer, who works in many languages spanning several computer device types, from Android to Apple to general front-end and back-end website, he has bean a great help to the team and plays the roll of Design Manager.</p>
+							<p class="links">
+								<a href="https://plus.google.com/103618862132298404107/about" title="Google+ Profile">Google Profile</a>
+								<span>&nbsp;&nbsp;</span>
+								<a href="http://www.eshbeata.com" title="Eshbeata The Coder">The Coder</a>
+							</p>
+						</div>
+					</div>
+					<div class="team-member">
+						<div class="team-member-image">
+							<a href="https://plus.google.com/117843617175570491498/about" title="Google+ Profile">
+								<img src="https://lh5.googleusercontent.com/-oQWT6WZAY3s/AAAAAAAAAAI/AAAAAAAAO1g/0laHhAYLpKM/photo.jpg?sz=64">
+							</a>
+						</div>
+						<div class="team-member-info">
+							<a href="https://plus.google.com/117843617175570491498/about" title="Google+ Profile">
+								<h3>Maximilian Majewski</h3>
+							</a>
+							<p>Maximilian Majewski is the one of the project's graphic designer. He and others are responsible for the user interface and overall look of our website. Also as an photographer he has a keen eye for visual interfaces and effects.</p>
+							<p class="links">
+								<a href="https://plus.google.com/117843617175570491498/about" title="Google+ Profile">Google Profile</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="tab_area" id="tab_twitter"></section>
+			<section class="tab_area" id="tab_donate">
+				<div class="section_header">
+					<h2>Donate the Love!</h2>
+				</div>
+				<div class="section_content">
+					<p>Here at Hangout Canopy we are determined to create a product that everyone can benefit from without paying for it. The donate button helps us achieve this goal. By donating to us you are helping us pay for server costs, bandwidth, and a coffee for our efforts and hard work.</p>
+						<p>We will continue to make canopy a free product, but, at the rate it is growing, costs are growing. We placed this donate button in good faith that if you like Hangout Canopy, you enjoy meeting new people, and would like to continue using it for free, you can donate to help us accomplish this.</p>
+						<a  class="donate_btn" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=D7KUQ7WQLTLZ2">Donate With PayPal </a>
+						
+				</div>
+			</section>
+			
+		</div>
+	</body>
+</html>

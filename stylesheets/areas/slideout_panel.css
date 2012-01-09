@@ -1,0 +1,115 @@
+/*
+	* General style for the slideout panel, Not specifically hangouts or settings!
+*/
+.slideout_panel
+{
+	top:0;
+	position:absolute;
+	z-index: 99;
+	left:620px;
+	width: 380px;
+	height:580px;
+	background:#fafafa;
+	-webkit-box-shadow: -2px 0 15px 1px rgba(0,0,0,0.65);
+}
+
+.slideout_panel .panel_header
+{
+	background:url('/images/sidebar_bg.png');
+	height:35px;
+	padding-top:4px;
+	padding-left:4px;
+	border-top:2px;
+	-webkit-border-image:url('/images/border_bottom_menu.png') 100 100 100 100 repeat;
+}
+.slideout_panel .panel_header .join
+{
+	margin-right:5px;
+	float:right;	
+}
+.slideout_panel .panel_header .refresh
+{
+	
+	text-indent:-99999px;
+	background:url('/images/icons/refresh.png');
+	width:20px;
+	height:11px;
+	margin-top:9px;
+	display:inline-block;
+}
+
+.slideout_panel .panel_header .close
+{
+	margin-left:16px;
+	text-indent:-99999px;
+	background:url('/images/close.png');
+	width:16px;
+	height:16px;
+	margin-top:5px;
+	display:inline-block;
+	margin-right:9px;
+}
+.slideout_panel .panel_header .post
+{
+	text-indent:-99999px;
+	background:url('/images/icons/post.png');
+	width:16px;
+	height:16px;
+	margin-top:5px;
+	display:inline-block;
+	margin-right:9px;
+}
+
+.slideout_panel .panel_users
+{
+}
+
+.slideout_panel .panel_users ul
+{
+	height:300px;
+	overflow:auto;	
+}
+.slideout_panel .panel_users ul li
+{
+	
+	border-bottom:1px solid #ccc;
+	padding-left:20px;
+	padding-top:5px;
+	padding-bottom:5px;
+	
+}
+.slideout_panel .panel_users ul li a
+{
+	float:left;
+}
+.slideout_panel .panel_users ul li a img
+{
+	
+}
+
+.slideout_panel .panel_users ul li:hover
+{
+	background:hsl(0, 0%, 95%);	
+}
+
+.slideout_panel .panel_users ul li span
+{
+	float:left;
+	margin-left:10px;
+	margin-top:7px;
+	width:200px;
+	overflow:hidden;
+}
+
+.slideout_panel .panel_users ul li a.profile
+{
+	float:right;
+	display:block;
+	width:60px !important;
+	font-size:10px !important;
+	padding:0px !important;
+	margin-top:5px;
+	height:20px !important;
+	line-height:20px !important;
+	margin-right:10px;
+}

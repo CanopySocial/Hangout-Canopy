@@ -1,0 +1,70 @@
+/*
+ * On Air
+*/
+#streams
+{
+	overflow-x:hidden;
+	overflow-y: scroll;
+	height: inherit;
+}
+
+#streams article.stream{
+	background:url(/images/list.png) repeat-x;
+	min-height:70px;
+	width:420px;
+	float:left;
+	position:relative;
+}
+
+#streams article.stream:hover{
+	background:hsl(0, 0%, 95%);	
+}
+
+#streams article.stream .main_image
+{
+	float: left;
+	margin-left:10px;
+	margin-top:10px;
+}
+
+#streams article.stream .info
+{
+	font-size:11px;
+	margin-top:12px;
+} 
+
+#streams article.stream .info .top_nav{
+	right:5px;
+	position:absolute;
+	z-index:3;
+	margin-right:8px;
+}
+
+#streams article.stream .top_nav span{
+	color:#999;
+	font-size:11.5px;
+}
+	
+#streams article.stream .top_nav span.public
+{
+	font-weight:bold;
+}
+
+#streams article.stream .clients{
+	float:left;
+	padding-left:10px;
+}
+
+#streams article.stream .clients p{
+	float:left;
+	width: 250px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	height: 12px;
+}
+
+#streams article.stream .clients img{ 
+	margin-top:2px;
+	margin-right:5px;
+	-webkit-border-radius: 5px
+}

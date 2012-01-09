@@ -1,0 +1,27 @@
+{
+	"name"		: "Hangout Canopy",
+	"version"	: "1.2.1.8",
+	"description"	: "Find and share public hangouts in real time.",
+	"icons"	: {
+		"16" : "images/icons/logo_16.png",
+		"32" : "images/icons/logo_32.png",
+		"48" : "images/icons/logo_48.png"
+	},
+	"default_locale"	: "en",
+	"browser_action": {
+		"default_icon"	: "images/icons/logo_32.png",
+		"default_title"	: "Find and share public hangouts in real time.",
+		"default_popup"	: "html/popup.html"
+	},
+	"background_page"	: "html/background.html",
+	"content_scripts"	: [],
+	"homepage_url"		: "http://hangoutcanopy.com/?r=ext",
+	"minimum_chrome_version": "12",
+	"permissions"		: [
+		"https://plus.google.com/*",
+		"https://api.twitter.com/*",
+		"https://www.googleapis.com/plus/v1/*",
+		"tabs",
+		"notifications"
+	]
+}

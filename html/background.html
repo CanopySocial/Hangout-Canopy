@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<script type="text/javascript" src="http://server1.hangoutcanopy.com:2006/socket.io/socket.io.js"></script>
+		<script type="text/javascript" src="/javascripts/utilities.js"></script>
+		<script type="text/javascript" src="/javascripts/notifications.js"></script>
+		<script type="text/javascript" src="/javascripts/watchingmanager.js"></script>
+		<script type="text/javascript" src="/javascripts/storage.js"></script>
+		<script type="text/javascript" src="/javascripts/settings.js"></script>
+		<script type="text/javascript" src="/javascripts/profiles.js"></script>
+		<script type="text/javascript" src="/javascripts/logger.js"></script>
+		<script type="text/javascript" src="/javascripts/base64.js"></script>
+		<script type="text/javascript" src="/javascripts/ajax.js"></script>
+		<script type="text/javascript" src="/javascripts/hangoutmanager.js"></script>
+		<script type="text/javascript" src="/javascripts/hangoutparser.js"></script>
+		<script type="text/javascript" src="/javascripts/connection.js"></script>
+		<script type="text/javascript" src="/javascripts/twitter.js"></script>
+		<script type="text/javascript" src="/javascripts/controllers/background.js"></script>
+		<script type="text/javascript">
+			/*
+			 * Setup Analytics Suite
+			*/
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-27220948-1']);
+			_gaq.push(['_trackPageview', '/background']); //For Real-Time statistics mainly.
+			_gaq.push(['_trackEvent',  "background", 'loaded']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = 'https://ssl.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+			/*
+			 * Instantiate teh Background Controller
+			*/
+			var __Debug = false;
+			var __BG = new BackgroundController();
+			window.getController = function(){return __BG;}
+		</script>
+	</head>
+</html>

@@ -1,0 +1,7 @@
+# General Files #
+.DS_Store
+.git
+
+# Tilda Files #
+*.js~
+*.css~

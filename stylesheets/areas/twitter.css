@@ -1,0 +1,58 @@
+
+ .twitter_header
+{
+}
+.twitter_header .follow
+{
+	margin-right:15px;
+	margin-top:15px;
+	float:right;
+}
+
+.twitter_feed
+{
+}
+
+.tweets
+{	
+}
+
+.tweets li
+{
+	padding-top:10px;
+	border-bottom:1px solid #ccc;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+	position:relative;	
+	width:inherit;
+}
+
+.tweets li:hover
+{
+	background:hsl(0, 0%, 95%);	
+}
+
+.tweets li img
+{
+	float:left;
+}
+.tweets li p
+{
+	margin-left:10px;
+	font-size:14px;
+	float:right;
+	width:330px;
+	line-height:16px;
+}
+.tweets li span
+{
+	font-size:11px;
+	margin-left: 62px;
+	float:right;
+}
+
+.tweets li span a
+{
+	color: hsl(220, 60%, 50%);
+}
