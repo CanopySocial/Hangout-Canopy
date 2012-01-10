@@ -47,23 +47,26 @@
     {
         var hangouts = this.internal.concat( this.external );
 
+	/*
+	 * Sort them client length
+	*/
+	hangouts.sort(function(a, b){
+
 		/*
-		 * Sort them client length
+		 * Place Live hangouts at the top
 		*/
-		hangouts.sort(function(a, b){
-	
-			/*
-			 * Place Live hangouts at the top
-			*/
-			if(a.is_stream || b.is_stream)
-			{
-				return (!a.is_stream && b.is_stream) ? -1 : (a.is_stream && !b.is_stream) ? 1 : 0;
-			}
+		if(a.is_stream || b.is_stream)
+		{
+			return (!a.is_stream && b.is_stream) ? -1 : (a.is_stream && !b.is_stream) ? 1 : 0;
+		}
 
-			return (a.clients.length < b.clients.length) ? -1 : (a.clients.length > b.clients.length) ? 1 : 0;
-		});
+		/*
+		 * Sort them by client total
+		*/
+		return (a.clients.length < b.clients.length) ? -1 : (a.clients.length > b.clients.length) ? 1 : 0;
+	});
 
-		return hangouts;
+	return hangouts;
     }
 
 	/*

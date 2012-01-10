@@ -22,17 +22,17 @@
 	background:hsl(0, 0%, 95%);	
 }
 
-#hangouts article.public:hover
+#hangouts article.public
 {
 	border-left: 3px solid green;
 }
 
-#hangouts article.stream:hover
+#hangouts article.stream
 {
 	border-left: 3px solid red;
 }
 
-#hangouts article.limited:hover
+#hangouts article.limited
 {
 	border-left: 3px solid #4D90F0;
 }

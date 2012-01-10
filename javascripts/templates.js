@@ -39,8 +39,7 @@ templates.hangouts.row = '<article id="${htmlid}" class="hangout {{if public}}pu
 					templates.hangouts.row += '{{if clients.length == 1}} no one {{else}}${clients.length - 1} people{{/if}}';
 				templates.hangouts.row += '{{/if}}';				
 			templates.hangouts.row += '</p>';
-			templates.hangouts.row +='<br class="clear" />';
-		
+			templates.hangouts.row +='<br class="clear" />';		
 			templates.hangouts.row += '{{each(i,v) clients}}';
 				templates.hangouts.row +='{{if i!=0 }}';
 					templates.hangouts.row +='{{if i<10 }}';
@@ -51,7 +50,7 @@ templates.hangouts.row = '<article id="${htmlid}" class="hangout {{if public}}pu
 			templates.hangouts.row += '<a href="#" class="arrow"></a>';
 		templates.hangouts.row += '</div>';
 		templates.hangouts.row += '<div class="top_nav">';
-				templates.hangouts.row += '<span class="public"><a href="${post_url}">{{if is_stream}}<strong style="color:#DF4B38;">ON AIR &#8226;</strong>{{else}}{{if public}}Public{{else}}Limited{{/if}}{{/if}}</a></span>';
+				templates.hangouts.row += '<span class="public"><a href="${post_url}">{{if is_stream}}<strong style="color:#DF4B38;">ON AIR &#8226;</strong>{{else clients.length > 9}}<span style="color:orange">FULL</span>{{else public}}Public{{else}}Limited{{/if}}</a></span>';
 		templates.hangouts.row += '</div>';
 	templates.hangouts.row += '</div>';
 
