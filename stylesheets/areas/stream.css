@@ -15,12 +15,27 @@
 	width:420px;
 	float:left;
 	position:relative;
+	border:3px solid #fff;
 }
 
 #hangouts article.hangout:hover{
-background:hsl(0, 0%, 95%);	
+	background:hsl(0, 0%, 95%);	
 }
 
+#hangouts article.public:hover
+{
+	border-left: 3px solid green;
+}
+
+#hangouts article.stream:hover
+{
+	border-left: 3px solid red;
+}
+
+#hangouts article.limited:hover
+{
+	border-left: 3px solid #4D90F0;
+}
 
 #hangouts article.hangout .info
 {
