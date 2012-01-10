@@ -113,3 +113,28 @@
 	line-height:20px !important;
 	margin-right:10px;
 }
+
+
+.slideout_panel textarea 
+{
+	margin-left: 40px;
+	margin-top: 20px;
+	width: 300px;
+	height: 180px;
+	border: 1px solid #ccc;	
+}
+
+#hangouts article.public:hover
+{
+	border-left: 3px solid green;
+}
+
+#hangouts article.stream:hover
+{
+	border-left: 3px solid red;
+}
+
+#hangouts article.limited:hover
+{
+	border-left: 3px solid #4D90F0;
+}
