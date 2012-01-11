@@ -46,9 +46,9 @@
 		this.connection.bindEventListener('announce'		, this.onHangoutLive.bind(this));
 		this.connection.bindEventListener('announce_stream'	, this.onStreamLive.bind(this));
 		this.connection.bindEventListener('update'		, this.onHangoutDoUpdate.bind(this));
-		this.connection.bindEventListener('update_stream', this.onStreamDoUpdate.bind(this));
+		this.connection.bindEventListener('update_stream'	, this.onStreamDoUpdate.bind(this));
 		this.connection.bindEventListener('closed'		, this.onHangoutClosed.bind(this));
-		this.connection.bindEventListener('closed_stream', this.onStreamClosed.bind(this));
+		this.connection.bindEventListener('closed_stream'	, this.onStreamClosed.bind(this));
 
 		/*
 			* Set loop for the badge
@@ -126,7 +126,7 @@
 
 	BackgroundController.prototype.onStreamDoUpdate = function(stream)
 	{
-		this.logger.notice("Updateing stream for SERVER:", stream);
+		this.logger.notice("Updating stream for SERVER:", stream);
 
 		this.manager.getStreamInformation(stream, (function(data){
 			this.connection.send('update_stream', data);

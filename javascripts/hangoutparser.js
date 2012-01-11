@@ -36,6 +36,7 @@
 				var data = {
 					id 	: post[82][2][1][0][0],
 					type	: 'open',
+					time	: post[5],
 					url	: post[82][2][1][0][1],
 					clients	: this.normalizeClients(post[82][2][1][0][3]),
 					is_stream : (post[82][2][1][0][6] == 2),
@@ -123,6 +124,7 @@
 					var data = {
 						id 	: post[82][2][1][0][0],
 						type	: 'open',
+						time	: post[5],
 						url	: post[82][2][1][0][1],
 						clients	: this.normalizeClients(post[82][2][1][0][3]),
 						is_stream : (post[82][2][1][0][6] == 2),
