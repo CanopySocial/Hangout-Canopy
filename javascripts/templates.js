@@ -127,8 +127,9 @@ templates.streams.row += '</article>';
 	* Plus Stream Feed
 */
 templates.plusstream ='<div class="section_header plusstream_header">';
-	//Header Here
-templates.plusstream += '</div>';
+	templates.plusstream +='<h2>Google+ Page</h2>';
+	templates.plusstream +='<g:plusone href="https://plus.google.com/115063434129506153403"></g:plusone>';
+	templates.plusstream += '</div>';
 templates.plusstream += '<div class="plusstream_feed section_content">';
 	templates.plusstream += '<ul class="plusstreams">';
 		templates.plusstream += '{{each(index, item) items}}';

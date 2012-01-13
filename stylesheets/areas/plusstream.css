@@ -5,6 +5,7 @@
 
 ul.plusstreams
 {
+	word-wrap: break-word;
 }
 
 ul.plusstreams li

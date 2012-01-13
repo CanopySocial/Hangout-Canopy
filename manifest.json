@@ -21,6 +21,8 @@
 		"https://plus.google.com/*",
 		"https://api.twitter.com/*",
 		"https://www.googleapis.com/plus/v1/*",
+		"https://plusone.google.com/*",
+		"https://api.google.com/*",
 		"tabs",
 		"notifications"
 	]
