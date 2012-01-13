@@ -9,12 +9,12 @@
 		<script type="text/javascript" src="/javascripts/popup_tabs.js"></script>
 		<script type="text/javascript" src="/javascripts/templates.js"></script>
 		<script type="text/javascript" src="/javascripts/controllers/popup.js"></script>
+		<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-27220948-1']);
 			_gaq.push(['_trackPageview', '/popup']); //For Real-Time statistics mainly.
 			_gaq.push(['_trackEvent',  "popup", 'clicked']);
-
 			(function() {
 				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 				ga.src = 'https://ssl.google-analytics.com/ga.js';
@@ -24,7 +24,9 @@
 		<script type="text/javascript">
 			window.__PC = new window.PopupController();
 			$(document).ready(window.__PC.init.bind(window.__PC));
+			
 		</script>
+		
 	</head>
 	<body>
 		<div class="container">
@@ -138,7 +140,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="tab_area" id="tab_twitter"></section>
+			<section class="tab_area" id="tab_plusstream"></section>
 			<section class="tab_area" id="tab_donate">
 				<div class="section_header">
 					<h2>Donate the Love!</h2>

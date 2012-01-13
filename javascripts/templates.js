@@ -56,7 +56,6 @@ templates.hangouts.row = '<article id="${htmlid}" class="hangout {{if public}}pu
 
 templates.hangouts.row += '</article>';
 
-
 /*
 	* Single Hangout Preview
 */
@@ -128,7 +127,6 @@ templates.streams.row += '</article>';
 */
 templates.plusstream ='<div class="section_header plusstream_header">';
 	templates.plusstream +='<h2>Google+ Page</h2>';
-	templates.plusstream +='<g:plusone href="https://plus.google.com/115063434129506153403"></g:plusone>';
 	templates.plusstream += '</div>';
 templates.plusstream += '<div class="plusstream_feed section_content">';
 	templates.plusstream += '<ul class="plusstreams">';
@@ -138,7 +136,7 @@ templates.plusstream += '<div class="plusstream_feed section_content">';
 				templates.plusstream +='<p>{{html item.object.content}}';
 					//Loop Attachments
 					templates.plusstream += '{{each(index, attachment) item.object.attachments}}';
-						templates.plusstream += "Has Attachment<br />";
+						//Do something with attachments maybe.
 					templates.plusstream += '{{/each}}';
 				templates.plusstream += '</p>';
 				templates.plusstream +='<br class="clear" />';
