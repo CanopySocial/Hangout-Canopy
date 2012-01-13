@@ -14,6 +14,7 @@ aside
 aside #menu
 {
 }
+
 aside #menu li
 {
 	padding:10px;
@@ -127,15 +128,6 @@ aside #menu li#donate span
 #tab_bugs #contact p
 {
 	padding-bottom:10px;
-}
-
-#tab_team h2
-{
-	padding-left: 20px;
-	padding-top: 20px;
-	color: #4AB1D3;
-	font-weight:bold;
-	font-size:26px;
 }
 
 aside .logo

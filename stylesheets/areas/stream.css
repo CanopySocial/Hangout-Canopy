@@ -55,7 +55,7 @@
 	font-size:11.5px;
 }
 	
-#hangouts article.hangout .top_nav span.public
+#hangouts article.hangout .top_nav span.hangout_type
 {
 	font-weight:bold;
 }

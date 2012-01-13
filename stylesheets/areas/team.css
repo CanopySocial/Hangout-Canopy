@@ -1,3 +1,10 @@
+#tab_team h2
+{
+	font-size:32px;
+	margin-left:20px;
+	margin-top:10px;
+}
+
 .team-member
 {
     padding:3px;
@@ -29,14 +36,12 @@ background:hsl(0, 0%, 95%);
 
 .team-member-info h3
 {
-
 	padding-bottom:5px;
-
 }
 
 .team-member-info p
 {
-	 font-size:12px;
+	font-size:14px;
 	margin-bottom:5px;
 }
 

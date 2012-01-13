@@ -5,10 +5,11 @@
 
 .plusstream_header h2
 {
-	padding: 15px 0 0 20px;
-	font-weight: bold;
-	font-size: 28px;
+	font-size:32px;
+	margin-left:20px;
+	margin-top:10px;
 }
+
 .plusstream_header a 
 {
 	margin-top: 5px;

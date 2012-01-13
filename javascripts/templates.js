@@ -49,8 +49,9 @@ templates.hangouts.row = '<article id="${htmlid}" class="hangout {{if public}}pu
 			templates.hangouts.row += '{{/each}}';
 			templates.hangouts.row += '<a href="#" class="arrow"></a>';
 		templates.hangouts.row += '</div>';
+
 		templates.hangouts.row += '<div class="top_nav">';
-				templates.hangouts.row += '<span class="public"><a href="${post_url}">{{if is_stream}}<strong style="color:#DF4B38;">ON AIR &#8226;</strong>{{else clients.length > 9}}<span style="color:orange">FULL</span>{{else public}}Public{{else}}Limited{{/if}}</a></span>';
+				templates.hangouts.row += '<span class="hangout_type type_{{if public}}public{{else is_stream}}stream{{else}}limited{{/if}}"><a href="${post_url}">{{if is_stream}}<strong style="color:#DF4B38;">ON AIR &#8226;</strong>{{else clients.length > 9}}<span style="color:orange">FULL</span>{{else public}}Public{{else}}Limited{{/if}}</a></span>';
 		templates.hangouts.row += '</div>';
 	templates.hangouts.row += '</div>';
 
@@ -126,7 +127,7 @@ templates.streams.row += '</article>';
 	* Plus Stream Feed
 */
 templates.plusstream ='<div class="section_header plusstream_header">';
-	templates.plusstream +='<h2>Google+ Page<a href="https://plus.google.com/115063434129506153403"><img src="/images/gplus.png" /></a></h2>';
+	templates.plusstream +='<h2>Google+ Page</h2><a href="https://plus.google.com/115063434129506153403" style="right: 20px;position: absolute;top: 10px"><img src="/images/gplus.png" /></a>';
 	templates.plusstream += '</div>';
 templates.plusstream += '<div class="plusstream_feed section_content">';
 	templates.plusstream += '<ul class="plusstreams">';
