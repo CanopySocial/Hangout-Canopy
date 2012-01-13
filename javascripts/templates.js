@@ -126,7 +126,7 @@ templates.streams.row += '</article>';
 	* Plus Stream Feed
 */
 templates.plusstream ='<div class="section_header plusstream_header">';
-	templates.plusstream +='<h2>Google+ Page</h2>';
+	templates.plusstream +='<h2>Google+ Page<a href="https://plus.google.com/115063434129506153403"><img src="/images/gplus.png" /></a></h2>';
 	templates.plusstream += '</div>';
 templates.plusstream += '<div class="plusstream_feed section_content">';
 	templates.plusstream += '<ul class="plusstreams">';

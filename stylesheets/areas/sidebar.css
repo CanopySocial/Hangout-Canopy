@@ -65,6 +65,14 @@ aside #menu li:hover a
 	color:#fff;
 }
 
+aside #menu li#plusstream span
+{
+	background-position: -216px -24px;	
+}
+aside #menu li#live span 
+{
+	background-position: 0 -24px;
+}
 aside #menu li#stream span
 {
       	background-position:-168px -24px;

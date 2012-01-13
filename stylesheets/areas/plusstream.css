@@ -3,10 +3,23 @@
 {
 }
 
+.plusstream_header h2
+{
+	padding: 15px 0 0 20px;
+	font-weight: bold;
+	font-size: 28px;
+}
+.plusstream_header a 
+{
+	margin-top: 5px;
+	margin-left: 10px;	
+}
+
 ul.plusstreams
 {
 	word-wrap: break-word;
 }
+
 
 ul.plusstreams li
 {
