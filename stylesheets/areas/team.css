@@ -7,11 +7,11 @@
 
 .team-member
 {
-    padding:3px;
-	border-bottom:1px solid #ccc;
-	padding-left:10px;
-	padding-top:10px;
-	float:left;
+	padding: 3px;
+	border-bottom: 1px solid #CCC;
+	padding-left: 10px;
+	padding-top: 5px;
+	float: left;
 }
 
 .team-member:hover

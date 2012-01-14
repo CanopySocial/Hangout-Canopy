@@ -64,7 +64,7 @@
 		if(streams.length == 0)
 		{
 			$('#live').hide();
-			$('.ads').css("height","188px");
+			$('.ads').css("height","195px");
 			return;
 		}
 
@@ -113,7 +113,7 @@
 
 	PopupController.prototype.initializeHangouts = function()
 	{
-		setTimeout(this.initializeHangouts.bind(this),2000);
+		setTimeout(this.initializeHangouts.bind(this),3000);
 		
 		/*
 			* Get hangout set from background Controller

@@ -15,7 +15,7 @@
 	width:420px;
 	float:left;
 	position:relative;
-	border:3px solid #fff;
+	/*border:3px solid #fff;*/
 }
 
 #hangouts article.hangout:hover{
