@@ -191,7 +191,6 @@
 			}
 			else
 			{
-				console.log("Pulled request from cache", CACHE[i]);
 				callback(CACHE[i].error, CACHE[i].data);
 				return;
 			}
