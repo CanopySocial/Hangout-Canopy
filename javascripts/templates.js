@@ -118,7 +118,7 @@ templates.streams.row = '<article id="${htmlid}" class="stream">';
 			templates.streams.row += '<a href="#" class="arrow"></a>';
 		templates.streams.row += '</div>';
 		templates.streams.row += '<div class="top_nav">';
-		templates.streams.row += '<span class="public"><a href="${post_url}">Stream</a></span>';
+		templates.streams.row += '<span class="public"><a href="${post_url}">Watch Now!</a></span>';
 		templates.streams.row += '</div>';
 	templates.streams.row += '</div>';
 templates.streams.row += '</article>';
