@@ -64,7 +64,6 @@ templates.hangouts.single = '<div class="slideout_panel">';
 	templates.hangouts.single +='<div class="panel_header">';
 		templates.hangouts.single += '<a title="Close This Slidepanel"  href="#" class="close">Close</a>';
 		templates.hangouts.single += '<a title="Link to the post" href="${post_url}" class="post">Post</a>';
-		templates.hangouts.single += '<a title="Embed This Hangout" href="#" class="join button embed">Embed</a>';
 		templates.hangouts.single += '<a title="Join This Hangout" href="${url}" class="join button">Join</a>';
 		templates.hangouts.single += '{{if is_stream}}<a title="Watch This Hangout" href="${post_url}" class="join button">Watch</a>{{/if}}';
 	templates.hangouts.single +='</div>';
