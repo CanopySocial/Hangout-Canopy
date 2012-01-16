@@ -139,8 +139,8 @@ aside .logo
 
 .ads
 {
-	margin-bottom:10px;
-	height: 154px;
+	margin:5px;
+	height: 215px;
 }
 
 .new_hangout
@@ -169,8 +169,6 @@ aside .logo
 
 .settings
 {
-	margin-top: 100px;
-	height:100px;
 	margin-left:10px;
 	-webkit-border-image:url('/images/border_bottom_menu.png') 100 100 100 100 repeat;
 	border-top:2px solid;

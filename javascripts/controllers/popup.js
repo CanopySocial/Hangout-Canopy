@@ -31,7 +31,11 @@
 			 * Open a new window
 			 * */
 			chrome.tabs.create({url : $(this).attr('href')});
-			
+		});
+
+		$("a[rel*='windowPopout']").live('click', function(){
+			var url = chrome.extension.getURL($(this).attr('href'));
+			chrome.tabs.create({url : url});
 		});
 
 		$('#hangouts .arrow').live('click', this.displayHangout.bind(this));
@@ -64,7 +68,7 @@
 		if(streams.length == 0)
 		{
 			$('#live').hide();
-			$('.ads').css("height","195px");
+			$('.ads').css("height","255px");
 			return;
 		}
 

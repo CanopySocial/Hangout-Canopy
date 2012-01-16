@@ -12,7 +12,6 @@
 		this.storage	= new window.Storage();
 		this.manager	= new window.HangoutManager();
 		this.settings	= new window.Settings();
-		this.profiles	= new window.Profiles();
 		this.plusapi	= new window.GooglePlusAPI('AIzaSyD9OVT14rdxn1OD2OITu_ygzQ_plai7JUk');
 
 		/*
